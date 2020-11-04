@@ -13,4 +13,5 @@ def find_min_in_nested_arrays(src)
     outer_results << longest_string_element
     row_index += 1
   end
+  outer_results
 end
