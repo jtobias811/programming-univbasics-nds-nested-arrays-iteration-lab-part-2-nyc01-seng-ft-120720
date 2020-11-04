@@ -5,5 +5,9 @@ def find_min_in_nested_arrays(src)
     element_index = 0
     longest_string_element = ""
     while element_index < src[row_index].count do
-      if src[row_index][element_index].min >
+      if src[row_index][element_index].min > longest_string_element.to_i
+        longest_string_element = src[row_index][element_index]
+      end
+      element_index += 1
+    end
 end
